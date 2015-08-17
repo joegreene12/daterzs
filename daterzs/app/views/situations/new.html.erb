@@ -1,0 +1,13 @@
+<h1>Situations#new</h1>
+<p>Find me in app/views/situations/new.html.erb</p>
+
+<h1>Add to Daterzs List</h1>
+
+<h3>New Potential</h3>
+
+<%= form_for @situation, url: {action: "create"}, html: {class: "some_class_if_you_want_one"} do |f| %>
+  <%= f.text_field :location %>
+  <%= f.text_field :nickname %>
+  <%= f.text_field :interest %>
+  <%= f.submit "Add Beau" %>
+<% end %>
